@@ -2,16 +2,15 @@
 //  apiManager.swift
 //  stats-game
 //
-//  Created by onsoft on 26/02/2020.
-//  Copyright © 2020 onsoft. All rights reserved.
+//  Created by anne-lise on 26/02/2020.
+//  Copyright © 2020 anne-lise. All rights reserved.
 //
 
 import Foundation
 
-class APIOverwatch {
+class API {
     
     struct InfosPlayer : Decodable {
-        var icon: String
         var name: String
         var level: Int
         var levelIcon: String
@@ -19,12 +18,9 @@ class APIOverwatch {
         var prestigeIcon: String
         var rating: Int
         var ratingIcon: String
-        var gamesWon: Int
     }
     
     func connectAPI(pseudo: String, battleTag: String) -> InfosPlayer {
-        //        print(pseudo)
-        //        print(battleTag)
         
         var infosPlayer: InfosPlayer!
         

@@ -2,8 +2,8 @@
 //  Accueil.swift
 //  stats-game
 //
-//  Created by onsoft on 25/02/2020.
-//  Copyright © 2020 onsoft. All rights reserved.
+//  Created by anne-lise on 25/02/2020.
+//  Copyright © 2020 anne-lise. All rights reserved.
 //
 
 import Foundation
@@ -39,7 +39,7 @@ class Accueil: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, U
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return games.count
     }
-
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return games[row]
     }
@@ -54,7 +54,7 @@ class Accueil: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, U
         let battleTag = battleTagTextField.text
         let gamesIndex = gamesPickerView.selectedRow(inComponent:0)
         let oneGame = games[gamesIndex]
-        game = Player(pseudo: pseudo ?? "", battleTag: battleTag ?? "", level: "0", ranking: "0", typeOfGame: oneGame)
+        game = Player(pseudo: pseudo ?? "", battleTag: battleTag ?? "", typeOfGame: oneGame)
     }
     
     //Pour faire apparaitre et disparaitre le clavier
@@ -70,9 +70,6 @@ class Accueil: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, U
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         nameTextField.resignFirstResponder()
         battleTagTextField.resignFirstResponder()
-    }
-    
-    
-    
+    }    
     
 }

@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  stats-game
 //
-//  Created by onsoft on 25/02/2020.
-//  Copyright © 2020 onsoft. All rights reserved.
+//  Created by anne-lise on 25/02/2020.
+//  Copyright © 2020 anne-lise. All rights reserved.
 //
 
 import UIKit
